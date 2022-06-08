@@ -4,14 +4,15 @@
  * print_alphabet - print alphabet
  * Return: void
  */
+
 void print_alphabet(void)
 {
-	char letter = 'a';
+	int i;
 
-	while (letter <= 'z')
+	for (i = 'a'; i <= 'z'; i++)
+
 	{
-		_putchar(letter);
-		letter++;
+	_putchar(i);
 	}
 	_putchar('\n');
 }
