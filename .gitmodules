@@ -1,0 +1,3 @@
+[submodule "0x09-static_libraries/0x09-static_libraries/test"]
+	path = 0x09-static_libraries/0x09-static_libraries/test
+	url = https://github.com/ayobamy/test
