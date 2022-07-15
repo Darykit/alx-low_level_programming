@@ -9,21 +9,17 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t counter = 0;
+	size_t nelem;
 
-	if (h->str == NULL)
+	nelem = 0;
+	while (h != NULL)
 	{
-		printf("[0] (nil)");
+		if (h->str == NULL)
+			printf("[%d] %s\n", 0, "(nil)");
+		else
+			printf("[%d] %s\n", h->len, h->str);
+		h = h->next;
+		nelem++;
 	}
-	else
-	{
-		while (h != NULL)
-		{
-			printf("[%u] %s\n", h->len, h->str);
-			h = h->next;
-			counter++;
-		}
-	}
-	return (counter);
+	return (nelem);
 }
-
